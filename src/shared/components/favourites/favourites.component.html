@@ -9,7 +9,7 @@
     <div *ngIf="isEmpty" class="d-flex flex-row flex-wrap align-items-center justify-content-center mb-5">
         <app-art *ngFor="let art of arts; index as i;" [arts]="art" [isAdded]="true" [color]="color"
             (eventClicked)="removeFromFavourites($event)"
-            class="art-card mx-3"></app-art>
+            class="art-card mx-4"></app-art>
     </div>
     <div *ngIf="!isEmpty" class="mx-3 d-flex flex-column flex-wrap align-items-center justify-content-center">
         <p class="fs-1 my-5" style="font-family: 'Lucida Console', Courier">Favourites Made Just For You</p>
