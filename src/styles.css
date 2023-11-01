@@ -1,1 +1,296 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style .files */
+.home {
+  height: 51rem;
+  /* position: relative; */
+  /* z-index: 1; */
+}
+.about-more {
+  position: relative;
+  font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
+}
+.about-more-us {
+  color: #b50938;
+}
+.about-more-us:hover {
+  text-decoration: underline;
+}
+.about-more-us:active {
+  text-decoration: underline;
+  color: #b50938;
+}
+.about-data {
+  max-height: 50rem;
+  text-align: justify;
+    text-justify:initial;
+}
+/* @media screen and (min-height:100px) and(max-height:50rem) {
+    .about p{
+        color: #b50938;
+        text-decoration: underline;
+    }
+} */
+.title {
+  font-family: Sabon, Roboto, Times New Roman, Times, Georgia, serif;
+}
+.home-img {
+  width: 100vw;
+  height: 50.1rem;
+}
+div.details {
+  position: absolute;
+  margin-top: 36rem;
+  margin-left: 8%;
+  padding: 10px 0px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 0px none;
+  width: 50vw;
+  /* font-size: x-large; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 0;
+  justify-content: center;
+}
+
+.logo {
+  /* height: 12vh; */
+  width: 7rem;
+}
+
+.navigation {
+  z-index: 10;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.671),
+    rgba(0, 0, 0, 0.288),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+/* @media (max-width: 767px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: all 0.5s ease;
+  }
+  .navigation.show {
+    left: 0;
+  }
+  .navigation .about,
+  .navigation .documentation,
+  .navigation .route-link {
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .navigation .about:hover,
+  .navigation .documentation:hover,
+  .navigation .route-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .navigation .logo {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+  }
+  .navigation .route-link {
+    margin-top: 20px;
+    border-bottom: none;
+  }
+  .navigation .route-link:last-child {
+    margin-bottom: 20px;
+  }
+  .navigation .documentation {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .navigation .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+} */
+
+.about {
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: small;
+  letter-spacing: 0.1em;
+}
+.documentation {
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: small;
+  letter-spacing: 0.1em;
+}
+.route-link {
+  color: #b50938;
+  text-shadow: 5px;
+}
+
+.route {
+  color: black;
+  text-shadow: #b50938 5px;
+  text-decoration: none;
+}
+
+#routing:link {
+  text-decoration: none;
+  /* font-weight: 500; */
+  font-size: large;
+  letter-spacing: 0.15em;
+  color: #b50938;
+  margin-right: 4vw;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+#routing:hover {
+  color: #b50938;
+  text-decoration: underline;
+}
+
+.check {
+  position: absolute;
+  margin-top: 8rem;
+  font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
+  width: 98%;
+  margin-bottom: 8rem;
+}
+.check hr{
+    width: 95%;
+}
+.art-card {
+  width: 23rem;
+}
+.art {
+  height: 38rem;
+  width: 2rem;
+}
+.desc {
+  width: 22rem;
+}
+.paginator-container .mat-paginator-sticky {
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  justify-content: center;
+  /* height: 56px; */
+  padding: 0px;
+  flex-wrap: wrap-reverse;
+}
+
+.flowe {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 200, "opsz" 48;
+}
+
+.display-container {
+  position: absolute;
+  padding-top: 15vh;
+  font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: auto;
+  background-color: blanchedalmond;
+}
+.display-container img {
+  width: 35rem;
+  height: 70vh;
+  overflow: hidden;
+}
+.content {
+  text-align: justify;
+  width: 40rem;
+}
+.content hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 94%;
+  background-color: black;
+  height: 1px;
+}
+.form {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5rem;
+}
+.form-control {
+  width: 15rem;
+  /* display: flex; */
+  /* padding-right: 5%; */
+  /* justify-content: flex-end; */
+}
+
+/* @media (max-width: 442px){
+    .navigation{
+
+    }
+    .home{
+        height: 35rem;
+    }
+} */
+/* .hello{
+
+color: #333;
+text-rendering: optimizeLegibility;
+text-size-adjust: 100%;
+box-sizing: inherit;
+touch-action: inherit;
+margin: 0;
+padding: 0;
+border: 0;
+background: 0 0;
+font: inherit;
+font-size: 100%;
+vertical-align: baseline;
+outline: 0;
+list-style: none;
+display: flex;
+position: relative;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+flex-flow: row wrap;
+margin-bottom: -4px;
+padding-bottom: 4px;
+min-width: 100%;
+margin-left: -3.125vw;
+margin-top: 0;
+padding-top: 0;
+} */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Ideal Sans A", "Ideal Sans B", "Helvetica Neue",
+    sans-serif;
+}

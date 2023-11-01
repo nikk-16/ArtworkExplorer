@@ -1,0 +1,25 @@
+<!-- <p>favourites works!</p> -->
+<div class="check">
+    <div class="mx-5 px-5 pt-3 " style="width: 21rem">
+        <h1 class=" p-0 mx-2 my-0" style="font-size: 1.43rem; letter-spacing: .15em; width: 21rem">YOUR&nbsp;FAVORITES</h1>
+        <hr class="p-0  my-1 border-2 border-danger"/>
+    </div>
+    <hr class="mx-5 mb-4 ">
+    <!-- <hr width="1" size="500"  /> -->
+    <div *ngIf="isEmpty" class="d-flex flex-row flex-wrap align-items-center justify-content-center mb-5">
+        <app-art *ngFor="let art of arts; index as i;" [arts]="art" [isAdded]="true" [color]="color"
+            (eventClicked)="removeFromFavourites($event)"
+            class="art-card mx-3"></app-art>
+    </div>
+    <div *ngIf="!isEmpty" class="mx-3 d-flex flex-column flex-wrap align-items-center justify-content-center">
+        <p class="fs-1 my-5" style="font-family: 'Lucida Console', Courier">Favourites Made Just For You</p>
+        <p class="fs-1" style="font-family: Raleway">See All Your Favourites♡ Here!</p>
+    </div>
+</div>
+<div class="paginator-container">
+    <mat-paginator class="mat-paginator-sticky bg-light shadow border-top border-1 border-danger"
+        [length]="this.arts.length" [pageIndex]="pageIndex" [pageSize]="pageSize"
+        [pageSizeOptions]="[10,12,25,50,100]" showFirstLastButtons="true" (page)="onChangeEvent($event)">
+
+    </mat-paginator>
+</div>

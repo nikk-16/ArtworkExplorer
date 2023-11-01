@@ -1,0 +1,24 @@
+<!-- <p>art works!</p> -->
+
+<div class="art d-flex flex-column flex-wrap align-items-center justify-content-start mb-1 border-1 shadow-2">
+    <!-- <app-loader></app-loader> -->
+    <a  routerLink="/artwork/{{arts.id}}" style="text-decoration: none; color: black;">
+        <div>
+            <img style="width: 23rem; height: 28rem;" [src]='getImage(arts.image_id)' alt="">
+        </div>
+        <div class=" desc mb-1 ms-2 d-flex flex-column justify-content-center">
+            <h2 class="flowe m-0 ">{{arts.title}} </h2>
+            <h4 class="m-0 "> {{arts.date_start}}</h4>
+            <hr class="border-2 border-danger m-0" style="width: 22rem;">
+            <p class=" mt-1 mb-0">by <b>{{arts.artist_title }}</b></p>
+        </div>
+    </a>
+    <div class="my-0  " >
+        <button mat-icon-button (click)="addToFavourites(arts.id)" aria-label="heart icon" class="d-flex flex-row ">
+            <mat-icon *ngIf="isAdded" color="warn">favorite</mat-icon>
+            <mat-icon *ngIf="!isAdded">favorite</mat-icon>
+        </button>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
