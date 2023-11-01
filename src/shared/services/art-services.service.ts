@@ -26,7 +26,6 @@ export class ArtServicesService {
     } else {
       this.favourite = JSON.parse(window.localStorage.getItem("favourite") as string);
     }
-
   }
 
   getData(page: number, limit: number): Observable<Data> {
@@ -44,13 +43,7 @@ export class ArtServicesService {
     return this.http.get<oneArt>(`https://api.artic.edu/api/v1/artworks/${id}?fields=${this.fields}`)
   }
   addToFavourites(id: number) {
-    // if (window.localStorage.getItem("favourite") === null) {
-    //   this.favourite.push(id);
-    //   this.favouriteIds.push(id)
-    //   console.log(this.favouriteIds)
-    //   window.localStorage.setItem("favourite", JSON.stringify(this.favourite));
-    // } else {
-    // this.favourite = JSON.parse(window.localStorage.getItem("favourite") as string);
+    
     if (!(this.favourite.find((wId: number) => wId === id))) {
       this.favourite.push(id);
       this.favouriteIds.push(id);
@@ -60,18 +53,6 @@ export class ArtServicesService {
     }
     window.localStorage.setItem("favourite", JSON.stringify(this.favourite));
     console.warn(this.favouriteIds);
-    // }
-
-    //     const index = this.favourite.findIndex((wId: number) => wId === id);
-    //     this.favourite.splice(index, 1);
-    //     inFavourites = false;
-    //     this.getWishlistedData()
-    //   }
-    //   window.localStorage.setItem("favourite", JSON.stringify(this.favourite));
-    // }
-    // return inFavourites;
-
-    // console.warn(this.favouriteIds);
   }
   getFavourites(): number[] {
     return this.favouriteIds;
