@@ -11,7 +11,7 @@
     <app-loader *ngIf="isLoading"></app-loader>
     <div *ngIf="!isLoading" class="d-flex flex-row flex-wrap justify-content-around mb-5 align-items-center">
         <app-art *ngFor="let art of arts; index as i"  [arts]="art" [isAdded]="isAdded[this.arts[i].id]" [color]="color"
-            (eventClicked)="addToFavourites($event)" class="art-card mx-5"></app-art>
+            (eventClicked)="addToFavourites($event)" class="art-card mx-4"></app-art>
         <!-- <hr style="width: 22%; margin-left: 1.5%; margin-bottom: 2%;"> -->
     </div>
 </div>
