@@ -1,15 +1,15 @@
-<div class="check">
+<div class="check mb-5">
     <div class="mx-5 px-5 pt-3 " style="width: 21rem">
         <h1 class=" p-0 mx-2 my-0" style="font-size: 1.45rem; letter-spacing: .15rem; width: 21rem">THE&nbsp;COLLECTION</h1>
         <!-- <h1 class=" p-0 mx-2 my-0" style="font-size: 1.5vw;">C O L L E C T I O N</h1> -->
-        <hr class="p-0  my-1 border-2 border-danger"  />
+        <hr class="p-0  my-1 border-2 border-danger" style="width: 15rem" />
     </div>
     <form class="form" [formGroup]="searchValue">
         <input class="form-control me-2" formControlName="query" type="search" placeholder="Search" aria-label="Search">
     </form>
-    <hr class="ms-5" style="min-width: 360px;" />
+    <hr class="ms-5" style="width:92%; min-width: 240px;" />
     <app-loader *ngIf="isLoading"></app-loader>
-    <div *ngIf="!isLoading" class="d-flex flex-row flex-wrap justify-content-around mb-5 align-items-center">
+    <div *ngIf="!isLoading" class="d-flex flex-row flex-wrap justify-content-center mb-5 align-items-center">
         <app-art *ngFor="let art of arts; index as i"  [arts]="art" [isAdded]="isAdded[this.arts[i].id]" [color]="color"
             (eventClicked)="addToFavourites($event)" class="art-card mx-4"></app-art>
         <!-- <hr style="width: 22%; margin-left: 1.5%; margin-bottom: 2%;"> -->

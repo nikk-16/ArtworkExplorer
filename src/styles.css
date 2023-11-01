@@ -84,7 +84,7 @@ div.details {
 }
 .route-link {
   color: #b50938;
-  text-shadow: 5px;
+  /* text-shadow: 5px; */
 }
 
 .route {
@@ -109,18 +109,19 @@ div.details {
   position: absolute;
   margin-top: 8rem;
   font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
-  width: 98%;
+  /* width: 100%; */
   margin-bottom: 8rem;
 }
 .check hr{
     width: 95%;
 }
 .art-card {
-  width: 23rem;
+  width: 30%;
+  min-width: 21rem;
 }
 .art {
   height: 38rem;
-  width: 2rem;
+  /* width: 2rem; */
 }
 .desc {
   width: 22rem;

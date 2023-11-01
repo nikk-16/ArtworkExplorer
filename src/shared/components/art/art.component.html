@@ -1,20 +1,20 @@
 <!-- <p>art works!</p> -->
 
-<div class="art d-flex flex-column flex-wrap align-items-center justify-content-start mb-1 border-1 shadow-2">
+<div class="art d-flex flex-column flex-wrap align-items-center justify-content-center mb-1 border-1 shadow-2">
     <!-- <app-loader></app-loader> -->
-    <a  routerLink="/artwork/{{arts.id}}" style="text-decoration: none; color: black;">
+    <a  routerLink="/artwork/{{arts.id}}"  style="text-decoration: none; color: black;">
         <div>
-            <img style="width: 24rem; height: 28rem;" [src]='getImage(arts.image_id)' alt="">
+            <img style="min-width: 21rem; width: 21rem; height: 28rem; " [src]='getImage(arts.image_id)' alt="">
         </div>
         <div class=" desc mb-1 ms-2 d-flex flex-column justify-content-center">
             <h2 class="flowe m-0 ">{{arts.title}} </h2>
             <h4 class="m-0 "> {{arts.date_start}}</h4>
-            <hr class="border-2 border-danger m-0" style="width: 22rem;">
+            <hr class="border-2 border-danger m-0" style="width: 25%; min-width: 20rem;">
             <p class=" mt-1 mb-0">by <b>{{arts.artist_title }}</b></p>
         </div>
     </a>
-    <div class="my-0  " >
-        <button mat-icon-button (click)="addToFavourites(arts.id)" aria-label="heart icon" class="d-flex flex-row ">
+    <div class="mx-0  " >
+        <button mat-icon-button (click)="addToFavourites(arts.id)" aria-label="heart icon" >
             <mat-icon *ngIf="isAdded" color="warn">favorite</mat-icon>
             <mat-icon *ngIf="!isAdded">favorite</mat-icon>
         </button>
