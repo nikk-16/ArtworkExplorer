@@ -98,7 +98,7 @@ div.details {
   font-size: large;
   letter-spacing: 0.15em;
   color: #b50938;
-  margin-right: 4vw;
+  /* margin-right: 4vw; */
 }
 #routing:hover {
   color: #b50938;

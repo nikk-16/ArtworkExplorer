@@ -5,7 +5,6 @@
         <hr class="p-0  my-1 border-2 border-danger" style="width: 15rem"/>
     </div>
     <hr class="ms-5 " style="width:92%; min-width: 300px;">
-    <!-- <hr width="1" size="500"  /> -->
     <div *ngIf="isEmpty" class="d-flex flex-row flex-wrap align-items-center justify-content-center mb-5">
         <app-art *ngFor="let art of arts; index as i;" [arts]="art" [isAdded]="true" [color]="color"
             (eventClicked)="removeFromFavourites($event)"
