@@ -7,7 +7,7 @@
     <form class="form" [formGroup]="searchValue">
         <input class="form-control me-2" formControlName="query" type="search" placeholder="Search" aria-label="Search">
     </form>
-    <hr class="ms-5" />
+    <hr class="ms-5" style="min-width: 360px;" />
     <app-loader *ngIf="isLoading"></app-loader>
     <div *ngIf="!isLoading" class="d-flex flex-row flex-wrap justify-content-around mb-5 align-items-center">
         <app-art *ngFor="let art of arts; index as i"  [arts]="art" [isAdded]="isAdded[this.arts[i].id]" [color]="color"

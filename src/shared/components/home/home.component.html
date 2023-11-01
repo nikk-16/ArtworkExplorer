@@ -3,7 +3,7 @@
     <app-loader *ngIf="isLoading"></app-loader>
     <img *ngIf="!isLoading" src="https://www.artic.edu/iiif/2/{{
       this.arts[3].image_id
-    }}/full/843,/0/default.jpg" alt="" class="home-img" />
+    }}/full/843,/0/default.jpg" alt="" class="home-img" width="100%" style="min-width: 340px ;"/>
 
     <div class="details">
         <h4 class="py-2">ARTWORK COLLECTION</h4>
@@ -16,16 +16,16 @@
         </div>
     </div>
 </div>
-<div class="about-more my-5 d-flex flex-column align-items-center">
+<div class="about-more my-5 d-flex flex-column align-items-center justify-content-center">
 
     <p class="about-more-us text-center fs-1 my-5">About Us</p>
-    <div class="d-flex flex-row flex-wrap align-items-center justify-content-center mx-5">
-        <div class="me-2" style="width: 15rem;"><img
+    <div class="d-flex flex-row flex-wrap align-items-center justify-content-center ">
+        <div class="mx-5"><img
                 src="https://lh3.googleusercontent.com/kdT9T9zfV-oiIBVPwhi7ouydC-JerjO90vzphBaAfP3s68WEgLkOTrsWd15AbW0"
                 alt="" width="250px" height="250px">
         </div>
-        <div class="mx-2 w-75 px-5 fs-4 lh-base" style="width: 30rem;">
-            <p class="about-data">
+        <div class=" fs-4 lh-base" style="width: 65%;">
+            <p class="about-data m-0 p-0">
                 The Art Institute of Chicago was founded as both a museum and school for the fine arts in 1879, a
                 critical era
                 in the history of Chicago as civic energies were devoted to rebuilding the metropolis that had been

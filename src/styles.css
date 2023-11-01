@@ -21,14 +21,15 @@
 .about-data {
   /* max-height: 50rem; */
   text-align: justify;
-    text-justify:initial;
+  text-justify:initial;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
   font-family: Sabon, Roboto, Times New Roman, Times, Georgia, serif;
 }
 .home-img {
-  width: 100vw;
   height: 50.1rem;
 }
 div.details {
@@ -152,18 +153,20 @@ div.details {
   position: absolute;
   padding-top: 15vh;
   font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
-  width: 100vw;
+  /* width: 100%; */
   height: auto;
   background-color: blanchedalmond;
 }
 .display-container img {
-  width: 35rem;
+  width: 35%;
+  min-width: 20rem;
   height: 70vh;
   overflow: hidden;
 }
 .content {
   text-align: justify;
-  width: 40rem;
+  width: 40%;
+  min-width: 20rem;
 }
 .content hr {
   border: 0;
