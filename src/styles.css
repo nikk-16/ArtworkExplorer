@@ -112,6 +112,14 @@ div.details {
   /* width: 100%; */
   margin-bottom: 8rem;
 }
+.docs{
+  position: absolute;
+  top: 8rem;
+  left: 3rem;
+  /* margin-top: 25rem; */
+  font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
+  margin-bottom: 8rem;
+}
 .check hr{
     width: 95%;
 }
@@ -123,6 +131,7 @@ div.details {
   height: 38rem;
   /* width: 2rem; */
 }
+
 .desc {
   width: 22rem;
 }
