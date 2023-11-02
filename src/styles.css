@@ -74,13 +74,13 @@ div.details {
   color: antiquewhite;
   text-decoration: none;
   font-size: small;
-  letter-spacing: 0.1em;
+  /* letter-spacing: .45vw; */
 }
 .documentation {
   color: antiquewhite;
   text-decoration: none;
   font-size: small;
-  letter-spacing: 0.1em;
+  /* letter-spacing: .45vw; */
 }
 .route-link {
   color: #b50938;
@@ -96,7 +96,7 @@ div.details {
 #routing:link {
   text-decoration: none;
   font-size: large;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.25vw;
   color: #b50938;
   /* margin-right: 4vw; */
 }
@@ -116,7 +116,7 @@ div.details {
   position: absolute;
   top: 8rem;
   left: 3rem;
-  /* margin-top: 25rem; */
+  width: 85%;
   font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
   margin-bottom: 8rem;
 }
@@ -163,20 +163,20 @@ div.details {
   position: absolute;
   padding-top: 15vh;
   font-family: "Ideal Sans A", "Ideal Sans B", Helvetica, Arial, sans-serif;
-  /* width: 100%; */
+  width: 100%;
   height: auto;
   background-color: blanchedalmond;
 }
 .display-container img {
-  width: 35%;
+  width: 35vw;
   min-width: 20rem;
   height: 70vh;
   overflow: hidden;
 }
 .content {
   text-align: justify;
-  width: 40%;
-  min-width: 20rem;
+  width: 40vw;
+  min-width: 22rem;
 }
 .content hr {
   border: 0;
